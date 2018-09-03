@@ -3,8 +3,10 @@
 if (!session_id()) {
     session_start();
 }
+
+//ECHO $_SERVER['DOCUMENT_ROOT'];
 // Include the autoloader provided in the SDK
-require_once '/lib/src/Facebook/autoload.php';
+require_once 'lib/src/Facebook/autoload.php';
 $app_id = "297687000767277";
 $app_secret = "1e730acfd82bb4a9144fddbe1cb069c4";
 $callbackurl = "https://localhost/LOGIN_USING_FB/callback.php";
